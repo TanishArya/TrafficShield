@@ -1,0 +1,10 @@
+[server]
+headless = true
+address = "127.0.0.1"
+port = 5000
+
+[theme]
+primaryColor = "#0052CC"
+secondaryBackgroundColor = "#FAFBFC"
+textColor = "#172B4D"
+font = "IBM Plex Sans"

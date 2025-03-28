@@ -1,0 +1,53 @@
+Here are the key features of the DDoS attack prevention software along with a brief explanation of each:
+
+1. Request Rate Monitoring
+Feature: Continuously tracks the number of requests made by each IP address within a specified time window.
+
+Detail: This feature helps in detecting unusual spikes in traffic that could indicate a DDoS attack. By monitoring request rates, the system can identify when an IP is sending an excessive number of requests.
+
+2. Traffic Anomaly Detection
+Feature: Identifies abnormal traffic patterns based on predefined thresholds.
+
+Detail: The system flags IP addresses that exceed a certain threshold of requests in a given time frame (e.g., 100 requests per minute). This serves as an early warning sign of potential DDoS attacks.
+
+3. IP Blacklisting and Blocking
+Feature: Automatically blocks IP addresses that exhibit DDoS-like behavior by exceeding request thresholds.
+
+Detail: If an IP is suspected of launching a DDoS attack (e.g., it exceeds the defined request limit), the software adds it to a blacklist and blocks it from further accessing the server.
+
+4. IP Whitelisting
+Feature: Allows trusted IPs to bypass rate limiting and blocking mechanisms.
+
+Detail: Trusted sources like internal services or regular users can be whitelisted to avoid unnecessary throttling or blocking, ensuring uninterrupted access for legitimate users.
+
+5. Rate Limiting
+Feature: Restricts the number of requests an IP can make within a short time period.
+
+Detail: This feature helps prevent a single IP from overwhelming the server by controlling the rate of incoming requests, thereby mitigating low-scale DDoS attacks and protecting server resources.
+
+6. Traffic Logging
+Feature: Logs the timestamps and IPs of incoming requests for monitoring and analysis.
+
+Detail: Logging requests helps to track traffic patterns and allows for post-attack analysis, providing insights into attack sources and helping to refine the mitigation process.
+
+7. Real-Time Alerts
+Feature: Sends real-time alerts when potential DDoS attacks are detected.
+
+Detail: Alerts notify administrators of unusual activity, such as when an IP exceeds the request threshold, helping them take immediate action before the attack escalates.
+
+8. Automatic Unblocking (Optional)
+Feature: Automatically unblocks IP addresses after a certain period or once traffic returns to normal.
+
+Detail: After an IP is blocked due to high request rates, it can be automatically unblocked after a predefined block duration (e.g., 1 hour) or once the attack subsides, reducing manual intervention.
+
+9. Integration with Web Servers/Proxies
+Feature: Can be integrated with popular web servers (like Nginx, Apache) or reverse proxies to provide an additional layer of protection.
+
+Detail: The software can be integrated with existing web infrastructure, enabling it to block malicious requests directly at the server level or reverse proxy, improving scalability and reducing the load on application servers.
+
+10. Customizable Thresholds
+Feature: Allows customization of the request thresholds and time windows for detecting attacks.
+
+Detail: Administrators can configure the system to suit specific server capacities or traffic patterns, ensuring optimal detection and prevention settings tailored to their infrastructure.
+
+These features collectively help in detecting, mitigating, and preventing DDoS attacks, protecting servers from being overwhelmed by malicious traffic.
